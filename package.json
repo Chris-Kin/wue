@@ -1,0 +1,25 @@
+{
+  "name": "wue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/attacking/wue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/attacking/wue/issues"
+  },
+  "homepage": "https://github.com/attacking/wue#readme",
+  "dependencies": {
+    "eslint": "^5.4.0"
+  }
+}
