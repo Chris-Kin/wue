@@ -1,21 +1,14 @@
-var input = document.querySelector('#input');
-var span = document.querySelector('#span');
+var app = document.querySelector('#app');
 
-var data  = {
-  name: '',
+function createFragment(rootDOM) {
+  var fragment = document.createDocumentFragment();
+  var child;
+  while (child = rootDOM.firstChild) {
+    fragment.appendChild(child);
+  }
+  return fragment;
 }
 
-Object.defineProperty(data, 'name', {
-  set: function(newVal) {
-    input.value = newVal;
-    span.innerHTML = newVal;
-  },
-});
+var newDOM = createFragment(app);
 
-input.addEventListener('keyup', function(e) {
-  var val = e.target.value;
-  data.name = val;
-  setTimeout(function() {
-    console.log(data);
-  }, 200);
-});
+app.appendChild(newDOM);
