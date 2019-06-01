@@ -12,11 +12,8 @@
 </head>
 <body>
   <div id="app">
-    <label for="input">
-      姓名：
-      <input type="text" id="input" />
-    </label>
-    <span id="span"></span>
+    <input type="text" id="input" v-model="name" />
+    {{name}}
   </div>
   <script src="./index.js"></script>
 </body>
